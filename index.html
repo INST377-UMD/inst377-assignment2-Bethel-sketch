@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Class Activities</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+        <section id="quote-section">
+          <h2>Inspirational Quote</h2>
+          <p id="quote-text">Loading quote...</p>
+          <p id="quote-author"></p>
+        </section>
+      
+        <section id="home-buttons">
+          <button onclick="window.location.href='stocks.html'">Go to Stocks</button>
+          <button onclick="window.location.href='dogs.html'">Go to Dogs</button>
+        </section>     
+  </main>
+
+  <div id="audio-controls">
+    <p><strong>Voice Commands:</strong></p>
+    <ul>
+      <li>Say: "Hello" → Alerts "Hello World"</li>
+      <li>Say: "Change the color to red" → Changes background</li>
+      <li>Say: "Navigate to stocks" → Goes to Stocks page</li>
+    </ul>
+    <button id="start-voice">Turn On Voice</button>
+    <button id="stop-voice">Turn Off Voice</button>
+  </div>
+
+  <!-- Core JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ruyadorno/simple-slider/dist/simpleslider.min.js"></script>
+
+  <!-- Page-specific script -->
+  <script src="js/main.js"></script> <!-- change this to stocks.js or dogs.js for other pages -->
+</body>
+</html>

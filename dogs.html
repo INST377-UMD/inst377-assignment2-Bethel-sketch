@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs | Class Activities</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+        <h2>Random Dog Carousel</h2>
+        <div id="dog-carousel" class="slider">
+          <!-- Images will be inserted here by JavaScript -->
+        </div>
+      </section>
+      
+      <section>
+        <h2>Dog Breeds</h2>
+        <div id="breed-buttons"></div>
+        <div id="breed-info"></div>
+      </section>
+      
+  </main>
+
+  <div id="audio-controls">
+    <p><strong>Voice Commands:</strong></p>
+    <ul>
+      <li>Say: "Hello"</li>
+      <li>Say: "Change the color to green"</li>
+      <li>Say: "Navigate to home"</li>
+      <li>Say: "Load Dog Breed <name>"</li>
+    </ul>
+    <button id="start-voice">Turn On Voice</button>
+    <button id="stop-voice">Turn Off Voice</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ruyadorno/simple-slider/dist/simpleslider.min.js"></script>
+  <script src="js/dogs.js"></script>
+</body>
+</html>
